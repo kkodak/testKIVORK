@@ -1,6 +1,5 @@
 import lib.HttpServerManager;
 import lib.Timeout;
-import lib.page.LoginPage;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -33,7 +32,7 @@ public class FirstTaskTest {
     }
 
     @Test
-    public void test() throws InterruptedException {
+    public void test() {
         driver.get(server.getServerUrl());
         By loginBtn= By.cssSelector("button[type='submit']");
         // we'll try to click at button 3 times. if each time stale element ref exception occurs,
